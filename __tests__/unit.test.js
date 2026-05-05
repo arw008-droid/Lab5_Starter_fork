@@ -45,135 +45,135 @@ test("+44 36 9339 4440 is a phone number", () => {
 
 //isEmail Tests
 /** 
- * 
+ * Test random email
  */
-test("is an email", () => {
-  const res = isEmail('');
+test("test@gmail.com is an email", () => {
+  const res = isEmail('test@gmail.com');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random email
  */
-test("is an email", () => {
-  const res = isEmail('');
+test("user_123@work_place.org is an email", () => {
+  const res = isEmail('user_123@work_place.org');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random email
  */
-test("is an email", () => {
-  const res = isEmail('');
+test("user@site.info is an email", () => {
+  const res = isEmail('user@site.info');
   expect(res).toBeFalsy();
 });
 
 /**
- * 
+ * Test random email
  */
-test("is an email", () => {
-  const res = isEmail('');
+test("user@mail.123 is an email", () => {
+  const res = isEmail('user@mail.123');
   expect(res).toBeFalsy();
 });
 
 // isStrongPassword Tests
 
 /**
- * 
+ * Test random strong password
  */
-test("is a strong password", () => {
-  const res = isStrongPassword('');
+test("Sky_2024 is a strong password", () => {
+  const res = isStrongPassword('Sky_2024');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random strong password
  */
-test("is a strong password", () => {
-  const res = isStrongPassword('');
+test("A1_b2_C3 is a strong password", () => {
+  const res = isStrongPassword('A1_b2_C3');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random weak password
  */
-test("is a strong password", () => {
-  const res = isStrongPassword('');
+test("9_CloudNine is a strong password", () => {
+  const res = isStrongPassword('9_CloudNine');
   expect(res).toBeFalsy();
 });
 
 /**
- * 
+ * Test random weak password
  */
-test("is a strong password", () => {
-  const res = isStrongPassword('');
+test("Blue!Sky@77 is a strong password", () => {
+  const res = isStrongPassword('Blue!Sky@77');
   expect(res).toBeFalsy();
 });
 
 // isDate Tests
 
 /**
- * 
+ * Test random valid date
  */
-test("is a date", () => {
-  const res = isDate('');
+test("5/12/2024 is a date", () => {
+  const res = isDate('5/12/2024');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random valid date
  */
-test("is a date", () => {
-  const res = isDate('');
+test("10/31/1999 is a date", () => {
+  const res = isDate('10/31/1999');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random invalid date
  */
-test("is a date", () => {
-  const res = isDate('');
+test("05/12/24 is a date", () => {
+  const res = isDate('05/12/24');
   expect(res).toBeFalsy();
 });
 
 /**
- * 
+ * Test random invalid date
  */
-test("is a date", () => {
-  const res = isDate('');
+test("5-12-2024 is a date", () => {
+  const res = isDate('5-12-2024');
   expect(res).toBeFalsy();
 });
 
 // isHexColor Tests
 
 /**
- * 
+ * Test random hexcolor
  */
-test("is hexcolor", () => {
-  const res = isHexColor('');
+test("#F00 is hexcolor", () => {
+  const res = isHexColor('#F00');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random hexcolor
  */
-test("is hexcolor", () => {
-  const res = isHexColor('');
+test("#3a7bd5 is hexcolor", () => {
+  const res = isHexColor('#3a7bd5');
   expect(res).toBeTruthy();
 });
 
 /**
- * 
+ * Test random hexcolor
  */
-test("is hexcolor", () => {
-  const res = isHexColor('');
+test("#FG0000 is hexcolor", () => {
+  const res = isHexColor('#FG0000');
   expect(res).toBeFalsy();
 });
 
 /**
- * 
+ * Test random hexcolor
  */
-test("is hexcolor", () => {
-  const res = isHexColor('');
+test("#FF00 is hexcolor", () => {
+  const res = isHexColor('#FF00');
   expect(res).toBeFalsy();
 });
